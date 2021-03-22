@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:id="@+id/word_icon"
+            tools:src="@drawable/ic_launcher_foreground"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@id/word_icon"
+            android:id="@+id/word_layout">
+
+            <TextView
+                android:id="@+id/miwok_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                tools:text="lutti"
+                tools:textSize="25dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/english_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="one"
+                tools:textSize="25dp"
+                tools:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_play"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
